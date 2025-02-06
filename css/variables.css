@@ -1,6 +1,10 @@
 :root{
-    --color-1: #D9D9D9;
-    --color-2: #252525;
-    --color-3: #FFFFFF;
-    --color-4: hsl(0, 0%, 80%);
+    --color-1:#eee;
+    --lorem-item: #f3f4f4;
+    --lorem-container: #dadce0;
+    --lorem-item-box: #ccdbfe;
+}
+@font-face {
+    font-family: "example";
+    src: url(../storage/font/example.ttf);
 }
