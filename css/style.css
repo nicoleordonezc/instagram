@@ -249,13 +249,90 @@ header{
 /* **************************************/
 .div__postInfo{
     grid-area: postInfo;
-    background: forestgreen;
+    background: var(--lorem-container);
+    padding: 0 13px;
 }
 
-
-
-
-
+.div__postInfo span{
+    display: block;
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+.div__postInfo p{
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+.div__postInfo p strong{
+    
+}
+.div__postInfo form{
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+.div__postInfo form textarea{
+    
+}
+.div__postInfo-icons {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div__leftIcons {
+    background: var(--lorem-item);
+    display: flex;
+    gap: 12px
+}
+.div__leftIcons a img{
+    width: 24px;
+    height: 24px;
+    position: relative; /* lorem */
+}
+/***************** lorem **************/
+.div__leftIcons a img::after{
+    background: var(--lorem-item-box);
+    content: "24 x 24";
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+.div__leftIcons a{
+}
+.div__leftIcons a img{
+}
+.div__rigthIcons {
+    background: var(--lorem-item);
+}
+.div__rigthIcons a img{
+    width: 24px;
+    height: 24px;
+    position: relative; /* lorem */
+}
+/***************** lorem **************/
+.div__rigthIcons a img::after{
+    background: var(--lorem-item-box);
+    content: "24 x 24";
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+.div__rigthIcons a{
+}
+.div__rigthIcons a img{
+}
 
 /************* Footer *****************/
 .footer__navigationBar{
@@ -266,7 +343,7 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     padding: 0 15px;
 }
